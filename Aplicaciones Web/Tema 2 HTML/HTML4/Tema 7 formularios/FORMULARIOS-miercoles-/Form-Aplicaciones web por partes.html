@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Repaso de formularios</title>
+	</head>
+	<body>
+		<form name="Miformulario" action="enviado.html" method="post">
+		<fieldset>
+			<legend> DATOS PERSONALES</legend>
+			<table>
+			 <tr>
+				<td><label style="color:red;">
+					Nombre:<input type="text" maxlength="10" size="25" required="required" disabled="disabled"/>
+				
+				</label><br/>
+				</td>
+			<!--disabled="disabled" -->
+			
+				<td><label>
+				Apellidos<input type="text" maxlength="35" size="35"/>
+				</label><br/>
+				</td>
+			</tr>
+			<label>
+				Dirección<input type="text" maxlength="10" size="15" />
+			</label><br/>
+			
+			<label>DNI <input type="text" placeholder="8 digitos 1 letra" pattern="[0-9]{8}[A-Z]" required="required"/></label><br/>
+			
+			<label>
+				Password<input type="password" maxlength="10" size="15" required="required"/>
+				
+			</label><br/>
+			<label>
+				Fecha de Nacimiento<input type="date"  />
+				
+			</label><br/>
+			<label>
+				correo electrónico<input type="email"  required="required"/>
+				
+			</label><br/>
+			<label>
+				Adjuntar foto<input type="file"  />
+				
+			</label><br/>
+			</table>
+			</fieldset>	
+		
+					
+			<h1> ENVIAR DATOS DEL FORMULARIO Y BORRAR</h1>
+			
+			<input type="submit" value="Enviar" style="background-color:orange;color:white;font-size:20px"/>
+			
+			<input type="reset" value="Borrar" style="background-color:blue;color:white;font-size:20px;"/>
+			
+			
+			
+		</form>
+	
+	</body>
+</html>	

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>	
+		<meta name="author" content="Miguel">
+		<title>Formulario</title>
+	</head>
+	<body>
+		<form name="Miformulario" action="enviado.html" method="post">
+			<fieldset style="width:80%; margin:auto;">	
+					<legend>DATOS PERSONALES</legend>
+				<table  style="background-color:pink;">
+				<tr>			
+					<td><label style="color:red;">
+						Nombre<input type="text" maxlength="10" size="10" required="required" />
+					</label><br/></td>
+					
+					<td><label>
+						Apellidos<input type="text" maxlength="35" size="40" required="required"/>
+					</label><br/></td>
+				</tr>	
+				<tr>
+					<td><label>
+						Direccion<input type="text" maxlength="40" size="40"/>
+					</label><br/></td>
+					
+					<td><label>
+						DNI <input type="text" placeholder="8 digitos y 1 letra" pattern="[0-9]{8}[A-Z]{1}" required="required"/>
+					</label><br/></td>
+				</tr>
+				<tr>
+					<td><label>
+						Password<input type="password" maxlength="15" size="15" required="required">
+					</label><br/></td>
+					
+					<td><label>
+						Fecha de Nacimiento<input type="date" required="required">
+					</label><br/></td>
+				</tr>	
+				<tr>
+					<td colspan="2"><label>
+						Correo<input type="email" required="required">
+					</label><br/></td>
+				</tr>
+				<tr>				
+					<td colspan="2"><label>
+						Adjuntar Foto<input type="file">
+					</label><br/></td>
+				</tr>	
+				</table>
+					
+			</fieldset>	
+				
+					<h1> ENVIAR DATOS DEL FORMULARIO Y BORRAR</h1>
+					
+					<input type="submit" value="Enviar">
+					
+					<input type="reset" value="Borrar">
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html><!-- Documento en HTML5 -->
+<html>
+	<head>
+		<meta charset="utf-8"/>	
+		<meta name="author" content="Javier">
+		<title> Configuración PC </title>
+	</head>
+	<body>
+		<form name="Configuración PC">
+			<legend> Francisco Javier SMR2 B </legend>
+			<fieldset style="width:80%; margin:auto;text-align:center">
+				<table style="background-color:#FAFFC4;width:100%">
+					<tr>
+						<td>
+							<h1 style="font-size:25px"> Ordenadores y configuraciones </h1>
+							<h2> Elige tu configuración </h2>
+							<h3 style="font-size:15px;color:red"> ¡Por favor elige una configuración, nosotros decidimos por ti! </h2>
+						</td>			
+						<td>
+							<table border style="width:15%">
+								<tr>
+									<td style="background-color:orange;">
+										<img src="pepinillos.jpg"/>
+									</td>
+									<td>
+									</td>
+									<td style="background-color:red;">
+										<img src="pepino.jpg"/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+			</table>
+			</fieldset>
+			<fieldset style="width:80%; margin:auto; ">	
+					<legend style="color:red;text-align:center;"><b>DATOS PERSONALES</b></legend>
+				<table  style="background-color:#FAFFC4;width:100%">
+				<tr>			
+					<td><label>
+						Nombre<input type="text" maxlength="10" size="10" required="required" />
+					</label><br/></td>
+					
+					<td><label>
+						Apellidos<input type="text" maxlength="35" size="40" required="required"/>
+					</label><br/></td>
+				</tr>	
+				<tr>
+					<td><label>
+						Direccion<input type="text" maxlength="40" size="40"/>
+					</label><br/></td>
+					
+					<td><label>
+						NIE o NIF <input type="text" placeholder="00000000X" pattern="[0-9]{8}[A-Z]{1}" required="required"/>
+					</label><br/></td>
+				</tr>
+				<tr>
+					<td><label>
+						Password<input type="password" maxlength="15" size="15" required="required">
+					</label><br/></td>
+					
+					<td><label>
+						Fecha de Nacimiento<input type="date" required="required">
+					</label><br/></td>
+				</tr>	
+				<tr>
+					<td colspan="2"><label>
+						Correo<input type="email" required="required">
+					</label><br/></td>
+				</tr>
+				<tr>				
+					<td colspan="2"><label>
+						Adjuntar código QR <input type="file">
+					</label><br/></td>
+				</tr>	
+				</table>
+					
+			</fieldset >
+			<fieldset style="width:80%; margin:auto; ">
+			<legend style="color:red;text-align:center;"><b> TIPO DE ORDENADOR </b></legend>
+			<table style="background-color:#FAFFC4; width:100%">
+				<tr>
+					<td>
+						<label> Ofimática <input type="radio" name="boton" checked="checked"/>
+						</label>	
+						<label> Gaming <input type="radio" name="boton"/>
+						</label>
+						<label> Servidor <input type="radio" name="boton"/>
+						</label>
+					</td>
+					<td>
+						<label> WI-FI <input type="checkbox" name="hola"/>
+						</label>	
+						<label> Teclado y Ratón <input type="checkbox"/>
+						</label>
+						<label> Monitor (agotados) <input type="checkbox" checked="checked" disabled="disabled"/>
+						</label>
+					</td>			
+				</tr>
+			</table>
+			</fieldset>
+			<fieldset style="width:80%; margin:auto; ">
+			<legend style="color:red;text-align:center;"><b> CONFIGURACIÓN FINAL </b></legend>
+			<table style="background-color:#FAFFC4; width:100%">
+				<tr>
+					<td>
+						<label> Resolución deseada
+							<select name="Resoluciones">
+								<option value="1"> 1280 x 1024 </option>
+								<option value="2" > 2560 x 1440 </option>
+								<option value="3"> 3860 x 2160 </option>
+							</select>
+						</label>
+					</td>	
+					<td>
+						<label> Fabricante
+							<select name="turnos" >
+								<option value="1"> INTEL </option>
+								<option value="2" > AMD </option>
+							</select>	
+						</label>
+					</td>
+					<td>
+						<label>
+						Puntuación Global <input type="number" min="1" max="10"/>	
+						</label>
+					</td>
+				</tr>
+			</table>
+			<br>
+					<input type="submit" value="Enviar"/>
+					
+					<input type="reset" value="Borrar"/>			
+			</fieldset>
+		</form>
+	</body>
+</html>

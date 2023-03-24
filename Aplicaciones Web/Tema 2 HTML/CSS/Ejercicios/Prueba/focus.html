@@ -1,0 +1,106 @@
+<!--DOCTYPE HTML-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Javier"/>
+		<title> Formulario con CSS focus </title>
+	<style type="text/css">
+
+	*{font-family: arial;
+	  font-style: italic;
+	  font-weight: bold;
+	  font-size: 13px;
+	 }
+	 
+		label {font-size:2em;
+			  }
+		
+		
+	
+	
+		input:focus {	background-color:olive;
+						color:red;}
+		input:hover {background-color:blue;
+					}
+		:root {background-color:pink;
+			 }
+		
+		
+	</style>
+	</head>
+	<body>
+		<h2> Información sobre un producto </h2>
+		<form action="blabla.html" method="post" name="focus">
+			<fieldset style="width:35%;">
+			<legend><b> Datos básicos </b></legend>
+				<table>
+					<tr>
+						<td><label><b> Nombre </b></br> <input required="required" type="text" placeholder="Introduzca su nombre" />
+						</label></td>
+					</tr>
+					<tr>
+						<td><label><b> Descripción </br></b><input type="text" style="height:45px;" />
+						</label></td>
+					</tr>
+					<tr>
+						<td><label><b> Foto </b><input accept="image/*" type="file"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"/><label> Añadir contador de visitas
+						</label></td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset style="width:35%;">
+			<legend><b> Datos económicos </b></legend>	
+				<table>
+					<tr>
+						<td><label><b> Precio </b><input step="10" min="20" max="2000" style="width:40%" type="number"/></label><label>$</label>
+						</td>
+						<td><label><b> Precio </b><input type="range" min="0" max="10" /></label><label>$
+						</label></td>
+					</tr>
+					<tr>
+						<td><label><b> Fecha de envío </b><input type="date" />
+						</label></td>
+						<td><label><b> Impuestos </b><select name="Impuestosa">
+														<option value="1" selected="selected"></option>
+														<option value="1">4%</option>
+														<option value="1">7%</option>
+														<option value="1">16%</option>
+														<option value="1">25%</option>
+														</select>
+						</label></td>
+					</tr>
+					<tr>
+						<td><b> Forma de envío
+						</td>
+						<td><b> Promoción </b>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="3"> </b><input placeholder="Paquetería Express - Correo" type="text"/>
+						</td>
+						<td><input name="kaka" type="radio"/><label><b> Ninguno </b>
+						</label></td>
+					</tr>
+					<tr>
+						<td><input name="kake" type="radio"/><label><b> Transporte público </b>
+						</label></td>
+					</tr>
+					<tr>
+						<td><input name="kaki" type="radio"/><label><b> Descuento 5% </b>
+						</label></td>
+					</tr>
+					<tr>
+						<td><input value="Realizar envío" type="submit"/>
+						</td>
+						<td><input value="Borrar Datos" type="reset"/>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

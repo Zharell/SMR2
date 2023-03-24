@@ -1,0 +1,105 @@
+<html> 
+	<head> 
+		<title> Ejemplo de estilo a nivel de página </title>
+		<meta name="author" content="Javier"/>
+		<style>
+			
+			body{font-family:Verdana;
+				 font-size:x-small;
+				 margin-left:0.25in;
+				 margin-right:0,25in;
+				 }
+			
+			h2{text-align:center;
+			   color:red;
+			   text-align:center;
+			   font-family:verdana;
+			   font-size:14pt;
+			   }
+			
+			.bmora{font-family:verdana;
+				   font-size:x-small;
+				   color:purple;
+				   }
+			
+			td{font-family:Verdana;
+			   font-size:x-small;
+			   color:olive;
+			   }
+			
+			th{
+			   font-family:Verdana;
+			   font-size:x-small;
+			   margin:auto;
+			   font-weight:bold;
+			   }
+			
+			table{border-style:double;
+				  border-color:olive;
+				  margin:auto;
+				  }
+			
+			#prueba{color:green;
+					text-decoration:underline;
+					}
+			
+			.letrasrojas{color:red;
+						 }
+			
+			.letrasazules{color:blue;
+						  }
+			
+			.ren{color:red;
+				 font-weight:bold;
+				 }
+			
+		</style>
+	</head> 
+	<body> 
+		<h2>Prueba de definición de estilos </h2> 
+			<p>
+				En este ejemplo vamos a comprobar que se verifican los estilos en función del contexto:
+				la negrita de una celda cualquiera de una tabala debe ser color rojo, y la negrida de una 
+				lista debe ser de color púrpura. En cambio <b>una negrita</b> en un párrafo no variará
+			</p>
+			<ul>
+				<li>Un elemento cualquiera</li>
+				<li>Un elemento con una palabra en <b class="bmora">negrita</b></li>
+				<li>Otro elemento cualquiera</li>
+			</ul>
+			</br>
+		<table> 
+			<tr> 
+				<th>Cabecera 1</th> 
+				<th>Cabecera 2</th> 
+			</tr> 
+			<tr> 
+				<td>Celda (1,1)
+				</td> 
+				<td>Celda (1,2)
+				</td> 
+			</tr>
+			<tr>
+				<td class="ren">Celda (2,1) en negrita
+				</td> 
+				<td>Celda (2,2)
+				</td> 
+			</tr>
+		</table>
+			<br>
+			<p>
+				Ahora vamos a probar variar un fragmento de texto como valor del parametro id, poníendolo
+				<span id="prueba">en verde y subrayado</span>
+			</p>
+			</br>
+			<p class="letrasrojas">
+				Finalmente, este párrafo irá con un estilo de letras rojas definido como clase y <span class="letrasazules">en
+				este trozo hay letras azules</span> definidas, también como clase.
+			</p>
+			</br>
+			<p>
+				Como ves con todos estos casos especiales tienes muchas opciones a lña hora de utilizar CSS
+				
+			</p>
+	</body> 
+</html>

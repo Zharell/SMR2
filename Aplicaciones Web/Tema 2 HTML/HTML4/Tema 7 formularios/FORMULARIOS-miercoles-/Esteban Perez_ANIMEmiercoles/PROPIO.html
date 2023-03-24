@@ -1,0 +1,165 @@
+<L!DOCTYPE html><!--:HTML5-->
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>formulario</title>
+		<meta name="author" content="Esteban Perez"/>
+	</head>
+	
+	<body>
+		<form name="REGISTRO" action="enviado.html" method="post">
+			<fieldset style="width:80%;margin:auto";>
+				<legend>USUARIO NUEVO</legend>
+						<table style="background-color:cyan;width:100%;">	
+							<tr>
+								<td><label style="color:red;">
+									USUARIO<input type="text" maxlength="10" size="10" required="required" disabled="disabled"/>
+								</label><br/>
+								</td>
+								<td>	
+								<label>
+									EDAD<input type="text" maxlength="10" size="15" required="required"/>
+								</label><br/>
+								</td>
+							</tr>
+							<tr>	
+								<td><label>
+									PAIS DE ORIGEN<input type="text" maxlength="25" size="5" required="required"/>
+								</label><br/>
+								</td>
+								<td><label>
+									FECHA<input type="date" required="required"/>
+								</label><br/>
+								</td>
+							</tr>
+							<tr>
+								<td><label>
+									DNI<input type="text" placeholder="8 digitos 1 letra" pattern="[0-9]{8}[A-Z]"/>
+								</label><br/>
+								</td>
+								<td>
+									<label>
+										Correo electronico<input type="email" required="required"/>
+									</label><br/>
+								</td>
+							</tr>
+							<tr>
+								<td><label>
+									Password <input type="password" maxlength="10" size="15" required="required"/>
+								</label><br/>
+								</td>
+								<td><label>
+									Password Confirmacion<input type="password" maxlength="10" size="15" required="required"/>
+								</label><br/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<label>
+										FOTO DE PERFIL<input type="file"/>
+									</label><br/>	
+								</td>
+							</tr>
+						</table>
+						
+			</fieldset>
+				
+			<fieldset style="width:80%;margin:auto";>
+				<legend>ADICIONAL</legend>
+					<table style="background-color:green;width:100%;">
+						<tr>
+							<td>
+								<label>ESPAÑOL<input type="checkbox" disabled="disabled" /></label>
+								<label>LATINO<input type="checkbox" /></label>
+								<label>JAPONES<input type="checkbox" checked="checked"/></label>
+							</td>
+							<td>
+								<label>480<input type="radio" name="boton" checked="checked"/></label>
+								<label>720<input type="radio" name="boton" disabled="disabled"/></label>
+								<label>1080<input type="radio" name="boton" checked="checked"/></label>
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+				
+			<fieldset style="width:80%;margin:auto;">
+				<legend>CATEGORIAS</legend>
+					<table style="background-color:red;width:100%;">
+						<tr>
+							<td>
+								<label>CATEGORIAS
+									<select name="categorias">
+									<option value="1">ACCION</option>
+									<option value="2">HORROR</option>
+									<option value="3">SHOUNEN</option>
+									<option value="4">AVENTURA</option>
+									<option value="5">ISEKAI</option>
+									<option value="6">DEPORTES</option>
+									<option value="1" select="selected">DEMONIOS</option>
+								</label>
+							</td>
+							<td>
+								<label>
+								TEMPORADAS<input style="number" min="1" max="10"/>
+								</label>
+							</td>	
+							<td>
+								<label>VISUALISACION
+									<select name="tipo">
+										<option value="1">WEB</option>
+										<option value="2">DESCARGAR</option>
+									</select>
+								</label>		
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+			
+			<fieldset>
+					<legend>ANIMES</legend>
+						<table style="width:100%;">
+							<tr>
+								<td style="width:25%;">
+									<ul>SHOUMEN
+										<li><a href="https://www.youtube.com/embed/yir9PZzlCKs" target="anime">DRAGON BALL Z</a></li>
+										<li><a href="https://www.youtube.com/embed/zVgKnfN9i34" target="anime">NARUTO</a></li>
+									</ul>
+									<ul>ISEKAI	
+										<li><a href="https://www.youtube.com/embed/S9yfM5OrpKU" target="anime">OVERLORD</a></li>
+										<li><a href="https://www.youtube.com/embed/GhGTc6p8sg0" target="anime">tensei shitara slime datta ken</a></li>
+									</ul>
+									<ul>TERROR
+										<li><a href="https://www.youtube.com/embed/8QE9cmfxx4s" target="anime">DEATH NOTE</a></li>
+										<li><a href="https://www.youtube.com/embed/uMeR2W19wT0" target="anime">TOKYO GHOUL</a></li>
+								</td>
+								<td>
+									<ul>
+										<li><a href="https://verdragonball.net/capitulo/dragon-ball-z-1x1/">CAPITULO 1</a></li>
+										<li><a href="https://www.crunchyroll.com/es-es/naruto/episode-1-enter-naruto-uzumaki-519936">CAPITULO 1</a></li>
+									</ul>	
+									<ul>
+										<li><a href="https://www.otakustv.com/anime/overlord/episodio-1/">CAPITULO 1</a></li>
+										<li><a href="https://www.otakustv.com/anime/tensei-shitara-slime-datta-ken/episodio-1/">CAPITULO 1</a></li>
+									</ul>
+									<ul>
+										<li><a href="https://www.otakustv.com/anime/death-note/episodio-1/">CAPITULO 1</a></li>
+										<li><a href="https://www.otakustv.com/anime/tokyo-ghoul/episodio-1/">CAPITULO 1</a></li>
+									</ul>
+								</td>	
+								<td style="width:65%;">
+									<iframe src="ANIMES.jpg" name="anime" style="width:75%; height:600px;"></iframe>
+								</td>			
+							</tr>				
+			</fieldset>
+			
+			<fieldset Style="width:80%;margin:auto;">
+				<h1>ENVIAR DATOS DEL FORMULARIO</h1>
+					<input type="submit" value="ENVIAR" style="background-color:orange;"/>
+					<input type="reset" value="BORRAR"/>
+			</fieldset>
+		</form>
+		
+	</body>
+	
+</html>

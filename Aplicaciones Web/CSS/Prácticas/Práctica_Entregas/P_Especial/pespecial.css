@@ -1,0 +1,189 @@
+/* Capa general */
+#contenedor{border:3px solid black;
+			background-color:lightcyan;
+			width:890px;
+			height:1125px;
+			position:relative;
+			margin:auto;
+			}
+			
+#illocabesa{position:relative;
+			border:3px groove yellow;
+			background-color: lightyellow;
+			width:510px;
+			height:100px;
+			font-size:15px;
+			line-height:7px;
+			padding-left:10px;
+			margin:10px 10px;
+			margin-left:20px;
+			}
+			
+#illocabesa h1{text-align:center;
+			   color:purple;
+			   
+			   }
+#illocabesa h2{text-align:center;
+			   color:gold;
+			   
+			   }
+#illocabesa h3{text-align:center;
+			   
+			   }
+
+#eljogo{position:absolute;
+		top:10px;
+		left:620px;
+		border:3px groove yellow;
+		background-color:lightyellow;
+		width:220px;
+		height:100px;
+		padding-left:20px;
+		margin:auto;
+		}
+#eljogo legend{text-align:center;
+			   font-weight:bold;
+			   padding-top:2px;}
+#eljogo label{font-size:10px;
+			  font-weight:bold;
+			  padding:0px 0px 10px 0px;
+			  }
+
+#datjogo{position:relative;
+		 border:3px groove yellow;
+		 background-color:lightyellow;
+		 width:840px;
+		 height:70px;
+		 margin-left:20px; 
+		 }
+#datjogo li{list-style:none;
+			font-weight:bold;
+			font-size:25px;
+			padding:10px 75px;
+			display:inline;		
+			}
+#datjogo a{text-decoration:none;
+		   }
+#datjogo li:hover{background:lightpink;
+				  border:2px solid red;
+				  }
+
+
+
+#bodyserrano{border:3px groove yellow;
+			 float:right;
+			 width:500px;
+			 height:300px;
+			 margin:15px 23px 20px 0px;
+			 background-color:lightyellow;
+			 }
+
+#bodyserrano iframe{margin:10px 22px auto;
+					width:90%;
+					height:90%;
+					border:3px solid purple;
+					}
+
+#bodyserranito{border:3px groove yellow;
+			   height:300px;
+			   width:300px;
+			   margin:15px 21px;
+			   background-color:lightyellow;
+			   }
+#bodyserranito iframe{margin:10px 12px auto;
+					  width:90%;
+					  height:90%;
+					  border:3px solid purple;
+					  }
+  
+#muchotexto{border:3px groove yellow;
+			background-color:lightyellow;
+			width:840px;
+			height:90px;
+			margin:15px 21px;
+			}
+#muchotexto p{border:3px solid purple;
+			  background-color:lightgreen;
+			  width:95%;
+			  height:65%;
+			  margin:12px auto;
+			  color:purple;
+			  }
+
+#waifujojos{border:3px groove yellow;
+			position:relative;
+			background-color:lightyellow;
+			width:445px;
+			height:310px;
+			margin:15px 20px;
+			}
+#waifujojos ul{border:3px solid purple;
+			   background-color:lightgreen;
+			   list-style:none;	   
+			   font-weight:bold;
+			   text-decoration:underline;
+			   color:purple;
+			   text-align:center;
+			   font-family:arial;
+			   margin:10px 12px auto;
+			   padding-left:3px;
+			   line-height:70px;
+			   font-size:30px;
+			   }
+
+#pokimon{border:3px groove yellow;
+		 width:350px;
+		 height:310;
+		 background-color:lightyellow;
+		 position:absolute;
+		 top:649px;
+		 left:511px;
+		 }
+#pokimon p{border:3px solid purple;
+		   background-color:lightgreen;
+		   height:277px;
+		   margin:9px 12px auto;
+		   padding-left:10px;
+		   padding-top:6px;
+		   color:purple;
+		   font-size:18px;		   
+		   text-indent:-30px;
+		   }
+
+
+
+.mongolin{padding-left:120px;
+		  font-weight:bold;
+		  font-size:20px;
+		  }
+
+
+
+#refacherito{border:3px groove yellow;
+			 background-color:lightyellow;
+			 width:845px;
+			 height:130px;
+			 margin:15px 20px;
+			 position:relative;
+			 
+			 }
+
+
+#refacherito img{border:3px solid purple;
+				 margin:3px 36px auto;
+				 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

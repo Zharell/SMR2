@@ -1,0 +1,9 @@
+ *{border: 1px solid red;}
+ h2 {color:blue;
+					font-size:30pt;
+					font-family: times;}
+				#primero {color:green;}
+				p  {color:red; font-family: "Comics Sans MS";
+					text-align: justify;
+					font-style: italic}
+				#segundo {color:pink;}

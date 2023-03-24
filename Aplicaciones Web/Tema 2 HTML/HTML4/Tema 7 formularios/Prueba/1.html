@@ -1,0 +1,56 @@
+<!--DOCTYPE HTML-->
+<html>
+	<head>
+		<meta charset="utf-9"/>
+		<title> Repaso de formularios </title>
+	</head>
+	<body>
+		<form name="claserepaso" action="enviado.html" method="post">
+			<fieldset style="width:80%;margin:auto;">
+				<Legend> DATOS PERSONALES </legend>
+					<table border="1">
+						<tr>
+							<td>
+								<label style="color:red;">Nombre<input type="text" maxlength="10" size="25" required="required" disabled="disabled"/>
+								</label><br/></td>
+							<td>
+								<label>Apellidos<input type="text" maxlength="10" size="35" required="required"/>
+								</label><br/></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Dirección<input type="text" maxlength="10" size="15"/>
+								</label><br/></td>
+							<td>
+								<label>DNI<input type="text" placeholder="8 digitos 1 letra" pattern="[0-9]{8}[A-Z]{1}"/>
+								</label><br/></td>
+						</tr>
+						<tr>	
+							<td>
+								<label>Password<input type="Password" maxlength="10" size="15" required="required" />
+								</label><br/>
+							</td>
+							<td>
+								<label>Fecha de nacimiento<input type="date" required="required" />
+								</label><br/>
+							</td>
+							<td>
+								<label>Correo Electrónico<input type="email" required="required" />
+								</label><br/>
+							</td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<label>Adjuntar foto<input type="file"/>
+								</label><br/>
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+		</form>	
+				<h1> ENVIADO DE DATOS </h1>
+					<input type="submit" value="Transferir" style="background-color:green;color:white;font-size:10px;"/>
+					<input type="reset" value="Borrarsito" style="background-color:olive;color:green"/>
+		
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!--DOCTYPE HTML-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="javier"/>
+		<title> Ejercicio2 </title>
+	</head>
+	<body>
+		<fieldset style="width:20%;margin:auto;">
+			<form>
+			<h1 style="text-align:center;"> CURRRÍCULUM VITAE </h1>
+				<table style="margin:left;">
+					<tr>
+						<th><label> Nombre y Apellidos <input size="40" maxlength="60" type="text"/>
+						</label></th>
+					</tr>
+					<tr>
+						<th><label> Correo electrónico <input size="41" maxlength="60" type="email"/>
+						</label></th>
+					</tr>
+					<tr>
+						<th><label> Teléfono <input size="50" maxlength="60" type="text" pattern="[0-9] {15}" />
+						</label></th>
+					</tr>
+					<tr>
+						<th><label>
+					</tr>
+				</table>
+			<h2 style="text-align:center;"> Experiencia </h2>
+				<table>
+					<tr>
+						<td><label> <input size="60" placeholder="Añada su experiencia" maxlength="60" type="text"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><label> <input size="60" placeholder="Añada su experiencia" maxlength="60" type="text"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><label> <input size="60" placeholder="Añada su experiencia" maxlength="60" type="text"/>
+						</label></td>
+					</tr>
+				</table>
+			<h2 style="text-align:center;"> Formación </h2>	
+				<table>
+					<tr>
+						<td><label> Formación más alta
+								<select name="formación">
+									<option value="1"> Sin estudios </option>
+									<option value="2"> No Universitarios </option>
+									<option value="4"> Graduado escolar o equivalente </option>
+									<option value="5"> Secundaria Obligatoria o equivalente </option>
+									<option value="6"> Bachillerato o equivalente </option>
+									<option value="7"> Universitarios </option>
+									<option value="8"> Diplomatura </option>
+									<option value="9"> Licenciatura </option>
+								</select>
+						</label></td>
+					</tr>
+					<tr>
+						<td><label> <input style="height:60px;" size="60" type="text" placeholder="Añada su formación (otro)" maxlength="60"/>
+						</label></td>
+					</tr>
+				</table>
+			<h2 style="text-align:center"> Carta de presentación </h2> 
+				<table>
+					<tr>
+						<td><label> <input style="height:60px;" size="30" type="text" placeholder="Cuéntanos sobre ti" maxlength="60"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="file"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td style="text-align:center;"><input type="submit" value="Enviar currículum" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</body>
+</html>

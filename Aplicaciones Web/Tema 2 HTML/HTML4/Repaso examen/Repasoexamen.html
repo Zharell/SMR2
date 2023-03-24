@@ -1,0 +1,120 @@
+<!-- DOCTYPE HTML -->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="javier"/>
+		<title> Práctica exámen </title>
+	</head>
+	<body>
+		<form enctype="multipart/form-data" action="sinpagina.html" method="post" name="examen">
+			<fieldset style="background-color:cyan;width:70%;margin:auto;">
+			<legend style="color:blue;font-size:20px;"><b> Probando examen </b></legend>
+				<table style="width:100%;margin:auto;background-color:#FFFAC2;">
+					<tr>
+						<td style="text-align:center"><h1> Aplicaciones web </h1>
+						</td>
+						<td style="text-align:center">
+							<table border="2">	
+								<tr>
+									<td>
+										<img src="1.jpg"/><img src="1.jpg"/><img src="1.jpg"/></br>
+										<img src="1.jpg"/><img src="1.jpg"/><img src="1.jpg"/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>	
+				</table>
+			</fieldset>
+			<fieldset style="background-color:cyan;width:70%;margin:auto;">
+			<legend style="color:blue;font-size:20px;"><b> formulario </b></legend>
+				<table style="width:100%;margin:auto;background-color:#FFFAC2;">
+					<tr>
+						<td><label>Nombre</br><input placeholder="Pedrito" type="text" maxlength="30" size="25"/>
+						</label></td>
+						<td><label>Apellidos</br><input placeholder="García" type="text" maxlength="30" size="25"/>
+						</label></td>
+						<td><label>Teléfono</br><input type="text" pattern="[0-9]{12}" required="required"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><label>Correo electrónico<input type="email" placeholder="Pedrito@hotmail.com" maxlength="30" size="25"/>
+						</label></td>
+						<td><label>Contraseña de registro<input type="password" size="25" maxlength="30" required="required"/>
+						</label></td>
+						<td><label>Fecha de nacimiento<input type="date" size="25" required="required" />
+						</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Descripción  <input type="text" maxlength="200" size="46"/>
+						</label></br></td>
+					</tr>
+					<tr>
+						<td><b> ¿Qué has preferido? </b></td>
+					</tr>
+					<tr>
+						<td><label> HTML4<input type="radio" name="curso"/>
+						</label></td>
+						<td><label> HTML5 CSS<input type="radio" name="curso"/>
+						</label></td>
+						<td><label>Iframe<input type="radio" name="curso"/>
+						</label></td>
+					</tr>
+					<tr>
+						<td><b> Selecciona los extra </b>
+						</td>
+					</tr>
+					<tr>
+						<td><label> Iframe <input type="checkbox" name="cheke"/>
+							</label>
+							<label> Img src <input type="checkbox" name="cheke"/>
+							</label>
+							<label> Table <input type="checkbox" name="cheke"/>
+							</label>
+							<label> A href <input type="checkbox" name="cheke"/>
+							</label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset style="background-color:cyan;width:70%;margin:auto;">
+			<legend style="color:blue;font-size:20px;"><b> Referencias </b></legend>
+				<table style="width:100%;margin:auto;background-color:#FFFAC2;">
+					<tr>
+						<th style="text-align:center;">
+							<ul> NVIDIA
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/jyQLqX-TyjE"> Cyberpunk 2077 1080
+								</a></li>
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/1GBSCWHunyk"> Cyberpunk 2077 1070
+								</a></li>
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/SWHRJyznOvM"> Cyberpunk 2077 1060
+								</a></li>
+							</ul>
+							<ul> AMD
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/grdtQzGZLOo"> Cyberpunk 2077 5500xt
+								</a></li>
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/NmCkW9FO5yU"> Cyberpunk 2077 5600xt
+								</a></li>
+								<li style="color:cyan;"><a target="confiframe" href="https://www.youtube.com/embed/FJOpr4JMWPY"> Cyberpunk 2077 5700xt
+								</a></li>
+							</ul>
+						</th>
+						<th style="text-align:center;"><iframe frameborder="1" src="1.jpg" name="confiframe" width="60%" height="150px">
+						</iframe></th>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset style="background-color:cyan;width:70%;margin:auto;">
+			<legend style="color:blue;font-size:20px;"><b> Finalización </b></legend>
+				<table style="width:100%;margin:auto;background-color:#FFFAC2;">
+					<tr>
+						<td style="text-align:center;"><input type="submit" value="Enviar formulario"/>
+						</td>
+						<td style="text-align:center;"><input type="reset" value="Resetear formulario"/>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

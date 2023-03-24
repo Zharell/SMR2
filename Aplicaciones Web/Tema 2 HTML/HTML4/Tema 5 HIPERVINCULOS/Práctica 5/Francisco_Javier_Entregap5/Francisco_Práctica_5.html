@@ -1,0 +1,127 @@
+<!--DOCTYPE HTML-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Practica 5 </title>
+		<meta name="author" content="Javier"/>
+	</head>
+	<body>
+		<h2 style="font-size:33px;" id="Eltextoenhtml"> El texto en HTML </h2>
+				<p>
+					Los navegadores no «entienden» el lenguaje que hablan los editores de texto: las
+					instrucciones que estos utilizan para insertar saltos de línea, poner en negrita una
+					palabra, etc., no son las que los browsers necesitan para reproducir el texto en pantalla
+					tal y como se desea. Para ello, HTML cuenta con unas etiquetas especiales destinadas al 
+					formato y estructuración del texto.
+				</p>
+				<a href="Francisco_Práctica_5-2.html#indice"> Índice </a>
+		<h3 style="font-size:23px;" id="Espaciado"> A Espaciado y estructura básica del texto </h3>
+				<p>
+					Si se escriben varios espacios en blanco o se introducen tabuladores o saltos de línea en
+					el texto tal y como se puede hacer en un documento cualquiera, estos formatos no se
+					visualizarán en el navegador. Esto es debido a que en HTML se necesitan unas etiquetas
+					concretas para definir la estructura que va a tener el texto y los espacios que se quieran 
+					introducir en el mismo.
+				</p>
+				<a href="Francisco_Práctica_5-2.html#indice"> Índice </a>
+			<ul>
+				<li id="Etiquetap">
+					La etiqueta P. La etiqueta P o de párrafo, es una de las más utlizadas en HTML a la hora
+					de estructurar un texto. Introduce un espacio de dos líneas de separación (equivalente a pulsar
+					dos veces enter en un editor de texto) con el siguiente párrafo de texto. Aunque se trata de una
+					etiqueta opcional, su uso es muy recomendable al servir como separador de bloques de texto y
+					elemento de espaciado.
+				</li>
+				<li id="Etiquetabr">
+					La etiqueta BR. Provoca un salto de línea simple (equivalente a apretar sólo una vez enter
+					en un editor de texto) dentro de un párrafo. Es decir, si una vez que se ha definido un
+					bloque de texto se desea introducir un salto de línea pero sin romper dicho bloque, se
+					utilizará BR. Esta etiqueta no necesita otra de cierre.
+				</li>
+				<li id="Etiquetapre">
+					La etiqueta PRE. La etiqueta PRE o de preformato, sirve para indicar a los navegadores que
+					deben respetar los espacios en blanco, saltos de línea y tabulaciones que contengan. A pesar
+					de estas posibilidades, esta etiqueta es un pobre sustitutivo de las vistas anteriormente ya
+					que da numerosos problemas. Cuando la línea es demasiado larga, el navegador no la corta y la
+					muestra tal y como aparece en el fichero fuente. Además, la presentació?n tiene una calidad
+					bastante pobre respecto al texto normal puesto que no admite la mayoría de las instrucciones
+					HTML, pudiéndose utilizar tan solo hiperenlaces o etiquetas de formato de texto (negrita,
+					cursiva, etc.). Por eso, no se recomienda su uso.
+				</li>
+				<li id="Etiquetahr">
+					La etiqueta HR. Introduce una regla o línea horizontal en el documento. Por defecto,
+					dicha regla poseerá el ancho de la ventana del navegador, tendrá forma tridimensional
+					(3D) e introducirá una separación equivalente a un cambio de párrafo tanto por delante
+					como por detrás de ella. Sin embargo, es posible modificar su aspecto mediante atributos.
+				</li>
+			</ul>
+		<h3 style="font-size:23px;" id="Tituloscabecera"> B Títulos de cabecera </h3>
+				<p>
+					En HTML se pueden definir diferentes jerarquías de títulos tal y como hacen algunos
+					editores de texto como Word. Para definir estos títulos de cabecera se utilizan
+					etiquetas que siguen la estructura: Hnivel. Es decir, los títulos de la categoría
+					1 estarán marcados en el documento HTML como H1, los de categoría 2 como H2, etc.
+					En total hay seis niveles, siendo H1 el de mayor jerarquía y mayor tamaño de letra y H6
+					el de menor. A diferencia de cuando se definían mediante la etiqueta TITLE , los
+					titulos definidos mediante estas etiquetas aparecerán en el documento en sí y no
+					en la barra del navegador. Cada navegador puede representarlos de un modo diferente,
+					lo que hace recomendable la comprobación de que los resultados obtenidos sean los
+					adecuados. En cualquier caso, los títulos se mostrarán de forma diferente según su 
+					importancia, siendo lo normal que la cabecera de tipo H1 se presente en negrita y 
+					de tamaño grande y que los efectos y tamaños vayan variando conforme se reduzca el
+					número de orden de la cabecera hasta llegar a H6. Por defecto, los títulos aparecerán
+					alineados a la izquierda. Esto puede ser modificado mediante la introducción del 
+					atributo ALIGN y valores como CENTER (centrado) o RIGHT (derecha). Por ejemplo:
+				</p>	
+				<p>
+					&lt;H1 ALIGN=center&gt;Título centrado&lt;/H1&gt;
+				</p>
+				<a href="Francisco_Práctica_5-2.html#indice"> Índice </a>
+		<h3 style="font-size:23px;" id="Formatofuentes"> C Formato de las fuentes </h3>
+					<p>
+						El texto, aparte de poderse estructurar como ya se ha 
+						reseñado, tambi&eacute;n se puede formatear cambiando la fuente, el tamaño, su color 
+						o resaltando ciertas palabras mediante el uso de negritas o cursivas. Aunque desde 
+						HTML 4.0, se prefiere que el formato se aplique a trav&eacute;s del lenguaje CSS (v&eacute;ase 
+						la Unidad 5), esto tambi&eacute;n es posible con las siguientes etiquetas.
+					</p>
+
+					<p>
+						Una de las etiquetas de formato m&aacute;s importantes es FONT. Con ella se formatea el 
+						texto seg&uacute;n los atributos que se le indiquen (v&eacute;ase la Tabla 4.6). As&iacute; 
+						ser&aacute; posible 
+						modificar la fuente por defecto (Times New Roman) y definir el tipo de fuente 
+						base. Para evitar problemas si el usuario no tiene dicha fuente instalada en su 
+						ordenador, se puede dar un listado de fuentes para que el navegador elija la primera 
+						que encuentre instalada: &lt;FONT FACE="Arial, Tahoma"&gt;Texto&lt;/FONT&gt; 
+					</p>
+
+					<p>
+						Por otra parte, el atributo SIZE permite definir el tamaño de la fuente. En HTML, el tamaño de 
+						esta se define en referencia a una escala del 1 al 7, siendo 3 el valor por defecto. 
+						Es posible definir el tamaño de la fuente de manera absoluta (2) o de manera relativa 
+						(+2, -4, etc.). En este &uacute;ltimo caso, tomar&aacute; como referencia el valor por defecto 
+						(3) o el &uacute;ltimo indicado, de tal forma que para dar un tamaño 5 a la fuente, bastar&iacute;a 
+						con escribir: &lt;FONT SIZE=+2&gt;
+					</p>
+
+					<p>
+						Adem&aacute;s de la fuente de un bloque de texto, tambi&eacute;n se pueden resaltar palabras o un
+						conjunto de ellas mediante el uso de negritas, cursivas o subrayado.
+					</p>
+
+					<p>
+						Simplemente hay que tener en cuenta dos cosas: la primera es que este tipo de etiquetas pueden
+						usarse por separado o de forma conjunta. Si es necesario que un texto aparezca subrayado y en negrita, 
+						tan s&oacute;lo habr&aacute; que usar las dos etiquetas de forma balanceada:
+						&lt;U&gt;&lt;B&gt;Texto&lt;/B&gt;&lt;/U&gt; 
+					</p>
+
+					<p>
+						En segundo lugar, el efecto generado por la etiqueta &lt;STRONG&gt;&lt;/STRONG&gt; depende en gran
+						medida del navegador que la interprete. Su misi&oacute;n es enfatizar el texto 
+						afectado y esto se puede hacer poni&eacute;ndolo en negrita, subrayado o negrita y subrayado a la vez. 
+					</p>
+					<a href="Francisco_Práctica_5-2.html#indice"> Índice </a>					
+	</body>
+</html>
